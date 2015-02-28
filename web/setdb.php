@@ -16,4 +16,8 @@
 
 	$select = $db->prepare('select * from user');
 	$select->execute();
+
+	$rowCount = $select->rowCount();
+
+	echo "<h1>$rowCount</h1>";
 ?>
